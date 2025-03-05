@@ -1,28 +1,15 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "/src/index.ts",
-      "use": "@vercel/node",
-      "functions": {
-        "src": "/src/index.ts",
-        "location": "Mumbai"
-      }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/src/index.ts"
-    }
-  ],
-  "env": {
-    "CACHE_NAMESPACE": "cache"
-  },
-  "bindings": [
-    {
-      "name": "cache",
-      "namespace": "cache"
-    }
-  ]
+    "version": 2,
+    "builds": [
+        {
+            "src": "/src/index.ts",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+        "src": "/(.*)",
+        "dest": "/src/index.ts"
+        }
+    ]
 }
