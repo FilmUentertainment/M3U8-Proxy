@@ -1,5 +1,6 @@
 {
     "version": 2,
+    "regions": ["bom1"],
     "builds": [
         {
             "src": "/src/index.ts",
@@ -8,8 +9,8 @@
     ],
     "routes": [
         {
-        "src": "/(.*)",
-        "dest": "/src/index.ts"
+            "src": "/(.*)",
+            "dest": "/src/index.ts"
         }
     ]
 }
